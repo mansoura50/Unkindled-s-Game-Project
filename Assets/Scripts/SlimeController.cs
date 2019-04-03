@@ -87,7 +87,9 @@ public class SlimeController : MonoBehaviour {
 
 	//how enemies deal damage (touching)
 	void OnCollisionEnter2D (Collision2D other) {
-		if(other.gameObject.name == "Player") {
+		//player death replaced by script in PlayerHealthManager
+
+		/*if(other.gameObject.name == "Player") {
 			//Destroy (other.gameObject);
 
 			//hit players can't move, respawns/reloads level
@@ -96,6 +98,7 @@ public class SlimeController : MonoBehaviour {
 			//allows player to be reloaded with level 
 			thePlayer = other.gameObject;
 		}
+		*/
 	}
 
 }

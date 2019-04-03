@@ -16,6 +16,12 @@ public class PlayerController : MonoBehaviour {
 	//has x and y value
 	private Vector2 lastMove;
 
+	//determines if player is attacking or not
+	private bool attacking;
+	//attack speed
+	public float attackTime;
+	private float attackTimeCounter;
+
     
 	// Start is called before the first frame update
     void Start() {
@@ -28,6 +34,10 @@ public class PlayerController : MonoBehaviour {
 
 		//when player is idle
 		playerMoving = false;
+
+		//!attacking means when not attacking movement is allowed
+		if(!attacking) {
+
 
 		//move the character left or right
 		// || represents "or"
@@ -59,7 +69,27 @@ public class PlayerController : MonoBehaviour {
 			myRigidbody.velocity = new Vector2(myRigidbody.velocity.x, 0f); 
 		}
 
+		//attack anim plays when pressing "J"
+		if (Input.GetKeyDown(KeyCode.J)) {
+			attackTimeCounter = attackTime;
+			attacking = true;
+			//stops player movement when attacking
+			myRigidbody.velocity = Vector2.zero;
+			anim.SetBool("Attack", true);
+		}
 
+		}//from if(!attacking)
+
+		if(attackTimeCounter > 0) {
+			attackTimeCounter -= Time.deltaTime;
+		}
+
+		//ends attack anim
+		if(attackTimeCounter <= 0) {
+			attacking = false;
+			anim.SetBool("Attack", false);
+		}
+			
 
 		//gets float parametars from the animator
 		//directional animations 

@@ -12,6 +12,9 @@ public class HurtEnemy : MonoBehaviour {
 
 	//to set enemy damage particles located at sword tip
 	public Transform hitPoint;
+
+	//creates damage number from FloatingNumbers
+	public GameObject damageNumber;
     
 	// Start is called before the first frame update
     void Start()  {
@@ -31,6 +34,9 @@ public class HurtEnemy : MonoBehaviour {
 			other.gameObject.GetComponent<EnemyHealthManager>().HurtEnemy(damageToGive);
 			//shows damage particles
 			Instantiate(damageBurst, hitPoint.position, hitPoint.rotation);
+			//Quaternion controls x,y,z positions based on sword direction
+			var clone = (GameObject) Instantiate(damageNumber, hitPoint.position, Quaternion.Euler (Vector3.zero));
+			clone.GetComponent<FloatingNumbers>().damageNumber = damageToGive;
 		}
 	}
 

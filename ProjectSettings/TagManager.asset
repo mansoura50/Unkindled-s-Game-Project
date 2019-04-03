@@ -51,3 +51,6 @@ TagManager:
   - name: WorldObjects
     uniqueID: 3099530931
     locked: 0
+  - name: UI
+    uniqueID: 672185085
+    locked: 0

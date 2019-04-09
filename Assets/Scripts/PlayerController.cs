@@ -69,8 +69,8 @@ public class PlayerController : MonoBehaviour {
 			myRigidbody.velocity = new Vector2(myRigidbody.velocity.x, 0f); 
 		}
 
-		//attack anim plays when pressing "J"
-		if (Input.GetKeyDown(KeyCode.J)) {
+		//attack anim plays when pressing "E"
+		if (Input.GetKeyDown(KeyCode.E)) {
 			attackTimeCounter = attackTime;
 			attacking = true;
 			//stops player movement when attacking

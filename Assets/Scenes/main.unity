@@ -18062,6 +18062,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
+  FaceX: 0
   timeBetweenMove: 2
   timeToMove: 1
   waitToReload: 2
@@ -21199,6 +21200,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: zombie
       objectReference: {fileID: 0}
+    - target: {fileID: 1919792468, guid: 9c3dd65dba5eaea4c8fc726ec933c92e, type: 3}
+      propertyPath: moveSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1919792468, guid: 9c3dd65dba5eaea4c8fc726ec933c92e, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1919792471, guid: 9c3dd65dba5eaea4c8fc726ec933c92e, type: 3}
       propertyPath: m_CullingMode
       value: 0
@@ -21471,7 +21480,7 @@ PrefabInstance:
     - target: {fileID: 5026512529895634936, guid: 0ad81ddc238571349ba2a6c122992f16,
         type: 3}
       propertyPath: m_TileColorArray.Array.data[0].m_RefCount
-      value: 16
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 5026512529895634936, guid: 0ad81ddc238571349ba2a6c122992f16,
         type: 3}
@@ -22044,6 +22053,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Tiles.Array.data[1].second.m_TileSpriteIndex
       value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 5026512529895634936, guid: 0ad81ddc238571349ba2a6c122992f16,
+        type: 3}
+      propertyPath: m_Tiles.Array.data[1].second.m_TileColorIndex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5026512529895634936, guid: 0ad81ddc238571349ba2a6c122992f16,
+        type: 3}
+      propertyPath: m_Tiles.Array.data[1].second.m_TileFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5026512529895634936, guid: 0ad81ddc238571349ba2a6c122992f16,
+        type: 3}
+      propertyPath: m_Tiles.Array.data[8].second.m_TileColorIndex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5026512529895634936, guid: 0ad81ddc238571349ba2a6c122992f16,
+        type: 3}
+      propertyPath: m_Tiles.Array.data[8].second.m_TileFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7988957553598734454, guid: 0ad81ddc238571349ba2a6c122992f16,
         type: 3}

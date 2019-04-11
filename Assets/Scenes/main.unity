@@ -17788,6 +17788,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: a152eaf68a2a4b845b03d5d8bffeded7,
         type: 3}
+    - target: {fileID: 1424876041676599287, guid: 1c9843feee84ef146a9b64db03b88c01,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1424876041676599287, guid: 1c9843feee84ef146a9b64db03b88c01,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1.28
+      objectReference: {fileID: 0}
     - target: {fileID: 1424876041676599284, guid: 1c9843feee84ef146a9b64db03b88c01,
         type: 3}
       propertyPath: m_Enabled
@@ -18018,7 +18028,7 @@ GameObject:
   - component: {fileID: 1919792467}
   - component: {fileID: 1919792474}
   m_Layer: 0
-  m_Name: Slime Red
+  m_Name: zombie
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18152,12 +18162,12 @@ SpriteRenderer:
   m_SortingLayerID: 171800031
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 965b3d0e6f4e80a45ae1c5c5af1465f1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a152eaf68a2a4b845b03d5d8bffeded7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.2, y: 1.28}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -18172,8 +18182,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1919792466}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.5, y: -1.1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -1.4527, y: -1.503, z: 0}
+  m_LocalScale: {x: 0.8659989, y: 0.8869691, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
@@ -21187,15 +21197,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1919792466, guid: 9c3dd65dba5eaea4c8fc726ec933c92e, type: 3}
       propertyPath: m_Name
-      value: Slime Red
+      value: zombie
+      objectReference: {fileID: 0}
+    - target: {fileID: 1919792471, guid: 9c3dd65dba5eaea4c8fc726ec933c92e, type: 3}
+      propertyPath: m_CullingMode
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1919792473, guid: 9c3dd65dba5eaea4c8fc726ec933c92e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.5
+      value: -1.4527
       objectReference: {fileID: 0}
     - target: {fileID: 1919792473, guid: 9c3dd65dba5eaea4c8fc726ec933c92e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.1
+      value: -1.503
       objectReference: {fileID: 0}
     - target: {fileID: 1919792473, guid: 9c3dd65dba5eaea4c8fc726ec933c92e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -21232,6 +21246,14 @@ PrefabInstance:
     - target: {fileID: 1919792473, guid: 9c3dd65dba5eaea4c8fc726ec933c92e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1919792473, guid: 9c3dd65dba5eaea4c8fc726ec933c92e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8659989
+      objectReference: {fileID: 0}
+    - target: {fileID: 1919792473, guid: 9c3dd65dba5eaea4c8fc726ec933c92e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8869691
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c3dd65dba5eaea4c8fc726ec933c92e, type: 3}
